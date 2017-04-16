@@ -1,12 +1,26 @@
 {
-  "name": "openshift-cartridge-nodejs-template",
-  "version": "1.0.1",
-  "description": "Custom Node.js cartridge for OpenShift - sample application",
+  "name": "teleport_vr",
+  "version": "1.0.0",
+  "description": "Teleport VR Web Site",
   "private": true,
   "main": "start.js",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+  	"serve-favicon": "*",
+  	"morgan": "*",
+  	"body-parser": "*",
+  	"method-override": "*",
+    "cors": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
   "scripts": {
     "start": "node --use_strict start.js"
   },
-  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
+  "author": "Yaroslav Smirnov <stellarnode@ya.ru>",
   "license": "ISC"
 }
