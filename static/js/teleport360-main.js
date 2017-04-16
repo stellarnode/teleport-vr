@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var heroPanoramaContainer = document.getElementById("hero-panorama");
     var heroPanorama = new PhotoSphereViewer({
-      panorama: "/images/360_0130_Stitch_YHC_scaledown.JPG",
+      panorama: __dirname + "/static/images/360_0130_Stitch_YHC_scaledown.JPG",
       container: heroPanoramaContainer
     });
 });
