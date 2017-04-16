@@ -6,11 +6,11 @@ routes.get('/', (req, res) => {
 });
 
 routes.get('/hero-panorama-image', (req, res) => {
-  res.sendFile('360_0130_Stitch_YHC_scaledown.JPG');
+  res.sendFile(path.resolve('static/images/360_0130_Stitch_YHC_scaledown.JPG'));
 });
 
 routes.get('/test', (req, res) => {
-  res.send('it works');
+  res.sendFile(path.resolve('static/images/hero-panorama_scaledown.JPG'));
 });
 
 module.exports = routes;

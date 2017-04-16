@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var heroPanoramaContainer = document.getElementById("hero-panorama");
     var heroPanorama = new PhotoSphereViewer({
-      panorama: "http://teleport-stellarnode.rhcloud.com/images/360_0130_Stitch_YHC_scaledown.JPG",
+      panorama: "http://teleport-stellarnode.rhcloud.com/hero-panorama-image",
       container: heroPanoramaContainer
     });
 });
