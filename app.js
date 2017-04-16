@@ -29,11 +29,16 @@ app.use(methodOverride('_method'));
 app.use(require('stylus').middleware(__dirname + '/static'));
 app.use(express.static(path.join(__dirname, 'static')));
 
+// app.use('/images',express.static(path.join(__dirname, 'static/images')));
+// app.use('/js',express.static(path.join(__dirname, 'static/js')));
+// app.use('/css',express.static(path.join(__dirname, 'static/stylesheets')));
+// app.use('/dist',express.static(path.join(__dirname, 'static/dist')));
+
 if (app.get('env') == 'development') {
 	app.locals.pretty = true;
 }
 
-app.get('/', routes.index);
+app.use('/', routes);
 
 let server = http.createServer(app);
 
