@@ -104,7 +104,7 @@ body {
 }
 
 .icon360 {
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 60px;
   left: 80px;
