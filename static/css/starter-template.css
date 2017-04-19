@@ -20,6 +20,8 @@ body {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+  height: 70%;
+  overflow: auto !important;
 }
 
 .starter-template h1 {
@@ -28,6 +30,12 @@ body {
 
 .starter-template .lead {
     font-size: 2em;
+    font-weight: 100;
+}
+
+.starter-template .lead2 {
+    font-size: 1.6em;
+    font-weight: lighter;
 }
 
 .overlay {
@@ -45,11 +53,67 @@ body {
   z-index: 900;
   position: relative;
   /*top: -160%;*/
-  top: -60%;
+  top: -65%;
+}
+
+.separator-line {
+  width: 800px;
+  text-align: center;
+  margin: auto;
 }
 
 #hero-panorama {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.iwantit {
+  display: inline-block;
+  margin: 40px 20px !important;
+  padding: 10px 20px 15px 20px;
+  width: 300px !important;
+  height: 70px;
+  font-size: 2em;
+  font-weight: 200;
+  border: 3px solid white;
+}
+
+.iwantit:hover {
+  background-color: white !important;
+}
+
+.iwantit:hover a {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.iwantit a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.iwantit a:hover {
+  text-decoration: none !important;
+}
+
+.icon360 {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
+
+.icon360 img {
+  width: 70px;
+  height: 70px;
+}
+
+.hello {
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  width: 300px;
+  font-size: 1.7em;
+  font-weight: 100;
+  border: 3px solid white;
 }
