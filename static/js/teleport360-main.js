@@ -15,8 +15,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       $("#contacts").hide();
       $(".iwantit").hide();
-      $("#hero-welcome").append("<p class=\"hello\"><strong>Get in touch with us:</strong><br>+34 643 659 803<br>teleportvrteam@gmail.com</p>");
+      $("#hero-welcome").append("<p class=\"hello text-center\"><strong>Tell us how we can help:</strong><br>+34 643 659 803<br>teleport.vr.team@gmail.com</p>");
 
     });
+
+    $('.starter-template').forwardevents( {directEventsTo:$('#hero-panorama')} );
+
+    // function passThrough(e) {
+    //   $("#hero-panorama").each(function() {
+    //      // check if clicked point (taken from event) is inside element
+    //      var mouseX = e.pageX;
+    //      var mouseY = e.pageY;
+    //      var offset = $(this).offset();
+    //      var width = $(this).width();
+    //      var height = $(this).height();
+    //
+    //      if (mouseX > offset.left && mouseX < offset.left+width && mouseY > offset.top && mouseY < offset.top+height)
+    //        $(this).click(); // force click event
+    //   });
+    // }
+    //
+    // $(".starter-template").click(passThrough);
+    //
+    // var dthen = new Date();
+    //
+    // var doPassThrough = true;
+    // $('input').click(function(){
+    //   doPassThrough =  !doPassThrough;
+    //   if (doPassThrough){
+    //     $("#shield").click(passThrough);
+    //   } else {
+    //     $('#shield').unbind('click', passThrough);
+    //   }
+    // });
+
+
+
 
 });

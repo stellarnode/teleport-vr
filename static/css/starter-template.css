@@ -20,8 +20,9 @@ body {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
-  height: 70%;
-  overflow: auto !important;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
 }
 
 .starter-template h1 {
@@ -38,6 +39,7 @@ body {
     font-weight: lighter;
 }
 
+/*
 .overlay {
   width: 100%;
   height: 100%;
@@ -46,18 +48,19 @@ body {
   background-color: black;
   opacity: 0.4;
   z-index: 10;
-}
+}*/
 
 #hero-welcome {
   color: white;
   z-index: 900;
   position: relative;
-  /*top: -160%;*/
-  top: -65%;
+  top: -100%;
 }
 
+
+
 .separator-line {
-  width: 800px;
+  width: 60%;
   text-align: center;
   margin: auto;
 }
@@ -69,10 +72,14 @@ body {
 }
 
 .iwantit {
-  display: inline-block;
-  margin: 40px 20px !important;
+  display: block;
+  position: relative;
+  /*margin: auto !important;*/
+  margin-top: 40px;
   padding: 10px 20px 15px 20px;
-  width: 300px !important;
+  left: 50%;
+  transform: translate(-50%);
+  width: 300px;
   height: 70px;
   font-size: 2em;
   font-weight: 200;
@@ -108,12 +115,70 @@ body {
   height: 70px;
 }
 
+.teleport-vr-logo {
+  display: block;
+  position: relative;
+  width: 200px;
+  margin-top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.teleport-vr-logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.hero-text-block {
+  display: block;
+  margin-top: 60px;
+}
+
 .hello {
+  display: block;
+  position: relative;
   margin: auto;
   margin-top: 50px;
   padding: 30px;
-  width: 300px;
+  width: 350px;
   font-size: 1.7em;
   font-weight: 100;
   border: 3px solid white;
+}
+
+@media screen and (max-width: 930px) {
+
+  .icon360 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .teleport-vr-logo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .teleport-vr-logo {
+    margin-top: 80px;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .separator-line {
+    width: 35%;
+  }
+
+}
+
+.click-layer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1200;
+  background-color: rgba(255, 255, 255, 0.6);
 }
