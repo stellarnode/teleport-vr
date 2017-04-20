@@ -19,12 +19,18 @@ body {
 	overflow: hidden;
 }*/
 
+.container,
+.starter-template,
+#hero-welcome {
+  overflow-y: scroll !important;
+}
+
 .starter-template {
-  padding: 40px 15px;
+  padding: 15px;
   text-align: center;
-  height: 100%;
+  height: 60%;
   width: 100%;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
 }
 
 .starter-template h1 {
@@ -56,7 +62,8 @@ body {
   color: white;
   z-index: 900;
   position: relative;
-  top: -100%;
+  top: -60%;
+  overflow-y: scroll !important;
 }
 
 
@@ -120,9 +127,9 @@ body {
 
 .teleport-vr-logo {
   display: block;
-  position: relative;
-  width: 200px;
-  margin-top: 150px;
+  position: absolute;
+  /*width: 200px;*/
+  top: 18%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -134,7 +141,7 @@ body {
 
 .hero-text-block {
   display: block;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 .hello {
@@ -143,8 +150,8 @@ body {
   margin: auto;
   margin-top: 50px;
   padding: 30px;
-  width: 350px;
-  font-size: 1.7em;
+  width: 340px;
+  font-size: 1.6em;
   font-weight: 200;
   border: 3px solid white;
 }
@@ -163,7 +170,9 @@ body {
   }
 
   .teleport-vr-logo {
-    margin-top: 80px;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
 }
@@ -172,6 +181,81 @@ body {
 
   .separator-line {
     width: 35%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #hero-welcome {
+    top: -57%;
+  }
+
+  .starter-template {
+    height: 57%;
+  }
+
+}
+
+@media screen and (max-height: 500px) {
+
+  .icon360 img {
+    width: 40px;
+    height: 40px;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .teleport-vr-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .teleport-vr-logo {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .hero-text-block .row h1 {
+    font-size: 3em;
+  }
+
+  .lead {
+    font-size: 1.7em;
+  }
+
+  #hero-welcome {
+    top: -53%;
+  }
+
+  .starter-template {
+    height: 53%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .hero-text-block .row h1 {
+    font-size: 3em;
+  }
+
+  .lead {
+    font-size: 1.7em !important;
+  }
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 770px) {
+
+  .hero-text-block .row h1 {
+    font-size: 3.5em;
+  }
+
+  .lead,
+  .lead2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 
 }
