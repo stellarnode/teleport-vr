@@ -116,7 +116,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 60px;
-  left: 80px;
+  right: 80px;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -129,14 +129,14 @@ body {
   display: block;
   position: absolute;
   /*width: 200px;*/
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%);
+  top: 50px;
+  left: 80px;
+  /*transform: translate(-50%);*/
 }
 
 .teleport-vr-logo img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .hero-text-block {
@@ -165,14 +165,15 @@ body {
   }
 
   .teleport-vr-logo img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .teleport-vr-logo {
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%);
+    top: 40px;
+    left: 60px;
+    /*left: 50%;
+    transform: translate(-50%);*/
   }
 
 }
@@ -206,15 +207,15 @@ body {
   }
 
   .teleport-vr-logo img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
-  .teleport-vr-logo {
+  /*.teleport-vr-logo {
     top: 15%;
     left: 50%;
     transform: translate(-50%);
-  }
+  }*/
 
   .hero-text-block .row h1 {
     font-size: 3em;
